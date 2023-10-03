@@ -1,0 +1,16 @@
+{
+  "functionConnections": {
+    "azureFunctionOperation": {
+      "function": {
+        "id": "/subscriptions/2056dd89-8a83-4781-a231-f38f4206dd04/resourceGroups/salesdemo/providers/Microsoft.Web/sites/funkyproduct/functions/getproduct"
+      },
+      "triggerUrl": "https://funkyproduct.azurewebsites.net/api/getproduct",
+      "authentication": {
+        "type": "QueryString",
+        "name": "Code",
+        "value": "@appsetting('azureFunctionOperation_functionAppKey')"
+      },
+      "displayName": "funkyproductconn"
+    }
+  }
+}
